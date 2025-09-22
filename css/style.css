@@ -1,0 +1,174 @@
+body {
+  padding-top: 150px;
+}
+
+.site-color {
+  background-color: #c20000;
+}
+
+.site-border {
+  border-width: 8px;
+  border-color: #f0bf18;
+  border-style: solid;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h1, h2 {
+  font-family: "Times New Roman", Times, serif !important;
+}
+
+.nav-link {
+  color: #FFFFFF !important;
+  font-family: "Helvetica" !important;
+}
+
+.nav-link.active {
+  color: #f0bf18 !important;
+}
+
+.inside-color {
+  background: white url("../images/texture.png") repeat;
+  background-size: auto;
+}
+
+.separator {
+  border-top: 0.15rem solid #c20000
+}
+
+.white-separator {
+  border-top: 0.07rem solid white
+}
+
+.dropdown-menu {
+  background-color: #c20000 !important;
+  border-color: #c20000 !important;
+}
+
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #f0bf18 !important;
+  background-color: #c20000 !important;
+}
+
+.dropdown-item.active {
+  color: #f0bf18 !important;
+  background-color: #c20000 !important;
+}
+
+blockquote {
+  margin-left: 20px;
+  padding-left: 15px;
+  font-style: italic;
+  color: #333;
+}
+
+p.special-quote {
+  color:#bb9923;
+}
+
+.contact-us {
+  font-family: "Calibri Light" !important;
+  color:white;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+}
+
+a:hover, a:focus {
+  color: #f0bf18 !important;
+}
+
+#quick-links {
+  font-family: "Calibri Light" !important;
+  color: white;
+}
+
+.social-icon-link {
+  color:white;
+  font-size: 3rem;
+}
+
+.navbar-expand-lg .navbar-nav {
+  font-family: "Helvetica" !important;
+  color: white;
+  flex-wrap: wrap;          /* Allows nav items to wrap to the next line */
+  justify-content: flex-end;  /* Centers the items within the navbar-nav list,
+                               especially important if they wrap to multiple lines */
+}
+
+/* Optional: Adjustments for smaller screens to help items fit better before wrapping.
+   These values can be fine-tuned to your preference. */
+
+@media (max-width: 767.98px) { /* Targets screens smaller than Bootstrap's 'md' breakpoint */
+  .navbar-expand-lg .nav-link {
+    font-size: 0.9rem;     /* Slightly reduce font size (your "Segoe UI" family is preserved) */
+    padding-left: 0.4rem;  /* Reduce horizontal padding on nav links */
+    padding-right: 0.4rem;
+    color: #FFFFFF !important;
+    font-family: "Helvetica" !important
+  }
+  /* Specifically target links with .mx-2 to adjust their Bootstrap margins */
+  .navbar-expand-lg .nav-link.mx-2 {
+    margin-left: 0.3rem !important;   /* Reduce horizontal margins */
+    margin-right: 0.3rem !important;
+    color: #FFFFFF !important;
+    font-family: "Helvetica" !important
+  }
+}
+
+@media (max-width: 575.98px) { /* Targets screens smaller than Bootstrap's 'sm' breakpoint */
+  .navbar-expand-lg .nav-link {
+    font-size: 0.8rem;     /* Further reduce font size */
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: #FFFFFF !important;
+    font-family: "Helvetica" !important
+  }
+  .navbar-expand-lg .nav-link.mx-2 {
+    margin-left: 0.2rem !important;
+    margin-right: 0.2rem !important;
+    color: #FFFFFF !important;
+    font-family: "Helvetica" !important
+  }
+}
+
+/* This rule is a safeguard for dropdown item font sizes.
+   Your existing .dropdown-item styles for color and background will be preserved. */
+.navbar-expand-lg .dropdown-menu .dropdown-item {
+  font-size: initial; /* Resets font-size in case it's inherited and too small.
+                         Alternatively, set to a specific value like '0.9rem' or '1rem'
+                         if your general '.dropdown-item' rule doesn't specify a font-size. */
+}
+
+/* --- End of Responsive Navbar Adjustments --- */
+
+@media (max-width: 767.98px) { /* Affects screens narrower than 768px (Bootstrap's 'md' breakpoint) */
+  .site-border {
+    margin-left: 1rem;   /* Significantly reduce horizontal margins */
+    margin-right: 1rem;
+    margin-top: 2rem;    /* Optionally reduce top/bottom margins */
+    margin-bottom: 2rem;
+    overflow: auto
+    /* You might also consider making the border itself thinner on small screens */
+    /* border-width: 4px; */
+  }
+}
+
+/* For small phones */
+@media (max-width: 575.98px) { /* Affects screens narrower than 576px (Bootstrap's 'sm' breakpoint) */
+  .site-border {
+    margin-left: 0.5rem; /* Even smaller margins for very narrow screens */
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}
